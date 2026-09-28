@@ -25,13 +25,13 @@ github-pages-teste/
 
 ## Publicação
 
-O workflow `Deploy to GitHub Pages` é executado a cada push em `main` ou manualmente pelo GitHub Actions.
+O workflow **Deploy to GitHub Pages** é executado a cada push em `main` ou manualmente pelo GitHub Actions.
 
 No GitHub, a fonte do Pages deve estar configurada em:
 
 **Settings → Pages → Build and deployment → Source → GitHub Actions**
 
-O GitHub informa que, após uma alteração, a publicação pode levar alguns minutos para ficar disponível. citeturn0search3turn0search0
+O GitHub Pages pode levar alguns minutos para disponibilizar uma alteração publicada.
 
 ## Objetivo pedagógico
 
