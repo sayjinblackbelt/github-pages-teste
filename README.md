@@ -1,16 +1,49 @@
-# GitHub Pages — Teste
+# GitHub Pages — Laboratório Web
 
-Primeiro projeto criado para testar o fluxo GitHub → GitHub Pages.
+Projeto criado para aprender e validar o fluxo **GitHub → GitHub Actions → GitHub Pages**.
+
+## Demonstrações
+
+- HTML sem framework.
+- CSS responsivo e adaptável a tema claro/escuro.
+- JavaScript para interação e persistência local.
+- Deploy automatizado pela branch `main`.
+- Publicação como site estático no GitHub Pages.
 
 ## Estrutura
 
-- `index.html` — página principal
-- `style.css` — estilos da página
+```text
+github-pages-teste/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-## Objetivo
+## Publicação
 
-Validar a publicação de uma página web estática usando GitHub Pages.
+O workflow `Deploy to GitHub Pages` é executado a cada push em `main` ou manualmente pelo GitHub Actions.
 
-## Próximo passo
+No GitHub, a fonte do Pages deve estar configurada em:
 
-Ativar o GitHub Pages para a branch `main` e testar a URL pública.
+**Settings → Pages → Build and deployment → Source → GitHub Actions**
+
+O GitHub informa que, após uma alteração, a publicação pode levar alguns minutos para ficar disponível. citeturn0search3turn0search0
+
+## Objetivo pedagógico
+
+Este repositório começou como um teste mínimo de publicação. A versão atual mantém o objetivo original, mas transforma o teste em um pequeno laboratório para experimentar:
+
+1. estrutura sem dependências;
+2. design responsivo;
+3. interatividade no navegador;
+4. versionamento;
+5. automação de deploy;
+6. publicação contínua.
+
+## Repositório
+
+https://github.com/sayjinblackbelt/github-pages-teste
