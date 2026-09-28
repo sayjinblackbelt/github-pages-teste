@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projeto de teste e demonstração do GitHub Pages.">
-  <title>GitHub Pages — Laboratório Web</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Laboratório visual de GitHub Pages — código, design e publicação web.">
+<title>GH•LAB — Do código à web.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#" aria-label="GitHub Pages Laboratório Web">GH<span>•</span>LAB</a>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">☾</button>
-  </header>
+<header class="site-header">
+  <a class="brand" href="#home">GH<span>•</span>LAB</a>
+  <nav aria-label="Navegação principal">
+    <a href="#demo">Laboratório</a><a href="#principles">Princípios</a><a href="https://github.com/sayjinblackbelt/github-pages-teste" target="_blank" rel="noopener">Código ↗</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">☾</button>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">GITHUB PAGES · 2026</span>
-        <h1>Do código<br><em>à web.</em></h1>
-        <p class="lead">
-          Um laboratório simples para validar publicação, HTML, CSS, JavaScript
-          e o fluxo de deploy com GitHub Pages.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="#demo">Testar interação <span>↓</span></a>
-          <a class="button secondary" href="https://github.com/sayjinblackbelt/github-pages-teste" target="_blank" rel="noopener">Ver código ↗</a>
-        </div>
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">GITHUB PAGES / WEB LABORATORY</p>
+      <h1>Do código<br><em>à web</em><span>.</span></h1>
+      <p class="hero-text">Um laboratório para experimentar publicação web, interação e deploy — transformando um repositório em uma experiência digital.</p>
+      <div class="hero-actions">
+        <a class="button button-fill" href="#demo">Explorar laboratório ↓</a>
+        <a class="button button-line" href="https://github.com/sayjinblackbelt/github-pages-teste" target="_blank" rel="noopener">Ver código ↗</a>
       </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb"></div><div class="ring ring-a"></div><div class="ring ring-b"></div>
+      <div class="label label-a">BUILD<br><b>01—04</b></div>
+      <div class="label label-b">DEPLOY<br><b>∞</b></div>
+      <div class="cross">+</div><div class="art-word">GH•LAB</div>
+    </div>
+  </div>
+  <div class="hero-foot"><span>01 / 03</span><span>SCROLL TO EXPLORE</span><span>© GH•LAB</span></div>
+</section>
 
-      <div class="hero-orbit" aria-hidden="true">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="core">GH</div>
-      </div>
-    </section>
+<section class="status-strip" aria-label="Status do projeto">
+  <div><span class="dot"></span><strong>Projeto ativo</strong></div>
+  <div>HTML + CSS + JS</div><div>GitHub Actions</div><div>GitHub Pages</div>
+</section>
 
-    <section class="status-strip" aria-label="Status do projeto">
-      <div><span class="dot"></span><strong>Projeto ativo</strong></div>
-      <div>HTML + CSS + JS</div>
-      <div>GitHub Actions</div>
-      <div>GitHub Pages</div>
-    </section>
+<section class="manifesto section-light">
+  <div class="wrap split">
+    <p class="kicker dark">01 / MANIFESTO</p>
+    <div>
+      <h2>Um pequeno projeto.<br><strong>Um fluxo completo.</strong></h2>
+      <p class="lead">A ideia é simples: escrever código, versionar, publicar e observar o resultado. O laboratório transforma esse processo em algo visível, interativo e fácil de experimentar.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section" id="demo">
-      <div class="section-heading">
-        <span class="eyebrow">01 · DEMONSTRAÇÃO</span>
-        <h2>Uma página estática também pode ser interativa.</h2>
-      </div>
+<section class="section section-dark" id="demo">
+  <div class="wrap section-head">
+    <div><p class="kicker">02 / SELECTED EXPERIMENTS</p><h2>Testar.<br><em>Publicar.</em></h2></div>
+    <p class="section-note">Três demonstrações para confirmar que a página estática pode ter presença visual, interação e um fluxo de deploy claro.</p>
+  </div>
 
-      <div class="demo-grid">
-        <article class="demo-card featured">
-          <span class="card-number">01</span>
-          <h3>Contador de interações</h3>
-          <p>Clique para confirmar que o JavaScript está sendo executado no site publicado.</p>
-          <div class="counter"><span id="counter">0</span><small>cliques</small></div>
-          <button class="button primary" id="countButton" type="button">Adicionar interação +1</button>
-        </article>
+  <div class="wrap demo-grid">
+    <article class="demo-card featured">
+      <span class="card-number">01</span><h3>Interação</h3>
+      <p>Clique para confirmar que o JavaScript está executando no site publicado.</p>
+      <div class="counter"><span id="counter">0</span><small>interações</small></div>
+      <button class="button button-fill" id="countButton" type="button">Adicionar +1</button>
+    </article>
+    <article class="demo-card">
+      <span class="card-number">02</span><h3>Responsivo</h3>
+      <p>Uma única interface que reorganiza conteúdo para desktop, tablet e celular.</p>
+      <div class="mini-ui"><span></span><span></span><span></span></div>
+    </article>
+    <article class="demo-card">
+      <span class="card-number">03</span><h3>Deploy</h3>
+      <p>Cada atualização na <code>main</code> pode seguir automaticamente até o GitHub Pages.</p>
+      <div class="pipeline"><span>commit</span><i>→</i><span>actions</span><i>→</i><span>pages</span></div>
+    </article>
+  </div>
+</section>
 
-        <article class="demo-card">
-          <span class="card-number">02</span>
-          <h3>Responsivo</h3>
-          <p>O layout se adapta a desktop, tablet e celular sem depender de frameworks.</p>
-          <div class="mini-ui"><span></span><span></span><span></span></div>
-        </article>
-
-        <article class="demo-card">
-          <span class="card-number">03</span>
-          <h3>Deploy automatizado</h3>
-          <p>Cada atualização na branch <code>main</code> pode disparar o GitHub Actions.</p>
-          <div class="pipeline"><span>commit</span><i>→</i><span>build</span><i>→</i><span>deploy</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section principles">
-      <div class="section-heading">
-        <span class="eyebrow">02 · O QUE ESTE TESTE VALIDA</span>
-        <h2>Pequeno projeto, fluxo completo.</h2>
-      </div>
+<section class="principles section-light" id="principles">
+  <div class="wrap">
+    <p class="kicker dark">03 / PRINCIPLES</p>
+    <div class="principles-grid">
+      <h2>Curiosidade<br>antes da<br><em>fórmula.</em></h2>
       <div class="principle-list">
-        <div><strong>01</strong><span>Estrutura sem dependências externas</span></div>
-        <div><strong>02</strong><span>Estilização responsiva e acessível</span></div>
-        <div><strong>03</strong><span>Interação básica com JavaScript</span></div>
-        <div><strong>04</strong><span>Publicação contínua pelo GitHub Pages</span></div>
+        <div><strong>01</strong><span>Estrutura simples antes de dependências.</span></div>
+        <div><strong>02</strong><span>Design como parte da experiência.</span></div>
+        <div><strong>03</strong><span>Interação que demonstra o código.</span></div>
+        <div><strong>04</strong><span>Automação para publicar com consistência.</span></div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <span>github-pages-teste</span>
-    <span>Construído para aprender · testar · publicar</span>
-  </footer>
+<section class="contact section-dark">
+  <div class="wrap contact-inner">
+    <p class="kicker">READY TO SHIP</p>
+    <h2>Do repositório<br><em>para a web.</em></h2>
+    <p>Este projeto existe para testar, aprender e publicar.</p>
+    <a class="contact-link" href="https://github.com/sayjinblackbelt/github-pages-teste" target="_blank" rel="noopener">Abrir repositório ↗</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <span>github-pages-teste</span><span>Ideias ganham forma através do código.</span><span>© 2026</span>
+</footer>
 </body>
 </html>
